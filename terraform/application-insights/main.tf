@@ -74,11 +74,6 @@ resource "azurerm_monitor_action_group" "this" {
   }
 
   email_receiver {
-    name          = "Mike Vesprini"
-    email_address = "mike@button.is"
-  }
-
-  email_receiver {
     name          = "Justyn Maglalang"
     email_address = "jmaglalang@alacritycanada.com"
   }
