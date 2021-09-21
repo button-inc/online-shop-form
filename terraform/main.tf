@@ -35,7 +35,7 @@ module "postgresql_dev" {
   prefix              = "${local.prefix}-dev"
   resource_group_name = azurerm_resource_group.this.name
   location            = local.resource_location
-  sku_name            = "GP_Gen5_2"
+  sku_name            = "GP_Gen4_1"
   storage_mb          = 5120
   admin_username      = "rootadmin"
   admin_password      = var.postgresql_password_dev
@@ -50,7 +50,7 @@ module "postgresql_test" {
   prefix              = "${local.prefix}-test"
   resource_group_name = azurerm_resource_group.this.name
   location            = local.resource_location
-  sku_name            = "GP_Gen5_2"
+  sku_name            = "GP_Gen4_1"
   storage_mb          = 5120
   admin_username      = "rootadmin"
   admin_password      = var.postgresql_password_test
@@ -65,7 +65,7 @@ module "postgresql_prod" {
   prefix              = "${local.prefix}-prod"
   resource_group_name = azurerm_resource_group.this.name
   location            = local.resource_location
-  sku_name            = "GP_Gen5_4"
+  sku_name            = "GP_Gen4_1"
   storage_mb          = 10240
   admin_username      = "rootadmin"
   admin_password      = var.postgresql_password_prod
