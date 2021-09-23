@@ -195,24 +195,19 @@ export default function Home({ canSubmit }) {
           <BackToTop />
 
           <ScrollHeader1 id="contact">Contact Us</ScrollHeader1>
-          <MaxWidthP>If you have any questions, please contact:</MaxWidthP>
-          <div>
-            <Info>
-              <Icon name="phone" />
-              844-487-1266
-            </Info>
-          </div>
-          <div>
-            <Info>
-              <HrefLink href="mailto:info@launchonline.ca">
-                <Icon name="mail" />
-                info@launchonline.ca
-              </HrefLink>
-            </Info>
-          </div>
-
-          <MaxWidthP>We will respond within 3 business days.</MaxWidthP>
-
+          <MaxWidthP>
+            If you are a prior grant recipient and have questions about your grant or would like to request a call back
+            from an agent, please email
+            <br />
+            <HrefLink href="mailto:applications@launchonline.ca">
+              <Icon name="mail" />
+              applications@launchonline.ca.
+            </HrefLink>
+          </MaxWidthP>
+          <MaxWidthP>
+            Please include your name, the name of your business, and your contact information. We will respond within 3
+            business days.
+          </MaxWidthP>
           <HorizontalRule />
 
           <Acknowledgement />
