@@ -4,7 +4,7 @@ on: push
 
 jobs:
   tests:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - name: Get yarn cache directory path
@@ -49,7 +49,7 @@ jobs:
       #     yarn cypress run
       #   working-directory: ./app
   pre-commit:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
@@ -75,7 +75,7 @@ jobs:
           chmod +x .bin/eslint-prettier.sh
           pre-commit run --all-files
   commitlint:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
         with:
