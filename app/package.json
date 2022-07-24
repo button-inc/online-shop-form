@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "nodemon --watch backend server",
+    "dev:client": "next dev",
     "build": "next build",
+    "export": "next export",
     "start": "cross-env NODE_ENV=production node server",
     "format": "git ls-files '*.js' '*.ts' | xargs prettier --write",
     "lint": "git ls-files '*.js' '*.ts' | xargs yarn eslint",

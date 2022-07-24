@@ -58,7 +58,7 @@ const PaddedDiv = styled.div`
   padding: 0 30px 0 30px;
 `;
 
-export default function Home({ canSubmit }) {
+export default function Home({ canSubmit = false } = {}) {
   return (
     <>
       <Container>
@@ -217,17 +217,17 @@ export default function Home({ canSubmit }) {
   );
 }
 
-export async function getServerSideProps({ req }) {
-  const { pgQuery, backendState } = req;
+// export async function getServerSideProps({ req }) {
+//   const { pgQuery, backendState } = req;
 
-  let canSubmit = backendState.canSubmit;
+//   let canSubmit = backendState.canSubmit;
 
-  if (canSubmit) {
-    const count = await pgQuery.countApplication();
-    canSubmit = backendState.setApplicationCount(count);
-  }
+//   if (canSubmit) {
+//     const count = await pgQuery.countApplication();
+//     canSubmit = backendState.setApplicationCount(count);
+//   }
 
-  return {
-    props: { canSubmit },
-  };
-}
+//   return {
+//     props: { canSubmit },
+//   };
+// }
